@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 83px;
+  width: 100%;
+  flex-direction: row;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 20%;
+
+  padding-right: 20px;
+  p {
+    font-size: 20px;
+  }
+}
+
+.btn {
+  width: 127px;
+  height: 30px;
+  background-color: #fdcf45;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 40%;
+}
+
+.search {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.search input {
+  background-image: url(https://www.w3schools.com/Css/searchicon.png);
+  border: 1px solid black;
+  width: 250px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: 215px 9px;
+  border-radius: 20px;
+  padding: 0px 0px 0px 20px;
+}
+
+
+.search input:hover , .big_b, .zero, .lo_btn, .shop, .logo, .text {
+    cursor: pointer;
+}
+
+
+.lo_btn {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.big_b {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.bb {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.b {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #b19c55;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zero {
+  position: absolute;
+  right: -14px;
+  bottom: -1px;
+}
+
+.shop {
+  width: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+    padding-left: 20px;
+}
+
+.sh_ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fdcf45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt {
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  left: 50px;
+  position: absolute;
+}
+
+.t {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+    display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1100px) {
+    
+    .center {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+}
